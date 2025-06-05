@@ -25,7 +25,7 @@ class SimpleShortenUrlServiceTest {
         String shortenUrlKey = shortenUrlCreateResponseDto.getShortenUrlKey();
 
         String originalUrl = simpleShortenUrlService.getOriginalUrlByShortenUrlKey(shortenUrlKey);
-
+        throw new RuntimeException();
         assertTrue(originalUrl.equals(expectedOriginalUrl));
     }
 
